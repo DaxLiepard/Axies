@@ -1,0 +1,6 @@
+<h1> Cards</h1>
+<% @cards.each do |card| %>
+  <a href="/cards/<%= card.id %>">Card id: <%= card.id %> </a> <br>
+<% end %>
+
+<%= link_to 'Crear carta', new_card_path %>

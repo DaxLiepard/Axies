@@ -1,0 +1,15 @@
+<h1>Wallets Show Controller </h1>
+
+<p>Ronin address: <%=@wallet.ronin_address %></p>
+
+<%= link_to 'Editar', edit_wallet_path(@wallet) %> <br>
+<%= link_to 'Borrar', @wallet, method: :delete %> <br>
+
+<% if @wallet.user.present? %>
+  <p>Email: <%=@wallet.user.email %></p>
+<% end %>
+
+
+<% @wallet.axies.each do |axie|  %>
+  ID: <%= axie.id  %> | Skill: <%= axie.skill %> <br>
+<% end %>

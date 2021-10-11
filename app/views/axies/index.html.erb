@@ -1,0 +1,6 @@
+<h4>Axies</h4>
+<% @axies.each do |axie| %>
+  <a href="/axies/<%= axie.id %>">Axie id: <%= axie.id %> </a> <br>
+<% end %>
+
+<%= link_to 'Create Axie', new_axie_path %>

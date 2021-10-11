@@ -1,0 +1,17 @@
+<h1> Show Axies Controller</h1>
+
+
+<p>Axie name: <%=@axie.name %></p>
+<p>Health: <%=@axie.health %></p>
+<p>Speed: <%=@axie.speed %></p>
+<p>Morale : <%=@axie.morale %> </p>
+<p>Skill: <%=@axie.skill %></p>
+<p>Ronin addres: <%=@axie.wallet.ronin_address %></p>
+
+<%= link_to 'Editar', edit_axie_path(@axie) %> <br>
+<%= link_to 'Borrar', @axie, method: :delete %> <br>
+
+<h3>Cartas </h3>
+<% @axie.cards.each do |card|  %>
+  ID: <%= card.id  %> | attack: <%= card.attack %> <br>
+<% end %>

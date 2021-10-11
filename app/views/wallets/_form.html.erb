@@ -1,0 +1,9 @@
+<%= form_with model: @wallet do |form| %>
+  <div>
+    <label for="">Ronin address</label>
+    <%= form.text_field :ronin_address %>
+  </div>
+
+  <%= form.submit %>
+
+<% end %>

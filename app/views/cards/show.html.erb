@@ -1,0 +1,7 @@
+<h1> Show Card Controller</h1>
+
+<p>Attack: <%=@card.attack %></p>
+<p>Defense: <%=@card.defense %></p>
+
+<%= link_to 'Editar', edit_card_path(@card) %> <br>
+<%= link_to 'Eliminar', @card, method: :delete %>

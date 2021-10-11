@@ -1,0 +1,14 @@
+<%= form_with model: @land do |form| %>
+
+  <div>
+  <label for="">Width</label>
+  <%= form.text_field :width %>
+</div>
+
+  <div>
+    <label for="">Height</label>
+    <%= form.text_field :height %>
+  </div>
+
+  <%= form.submit %>
+<% end %>

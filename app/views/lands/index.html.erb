@@ -1,0 +1,4 @@
+<h1>Lands Index </h1>
+<% @lands.each do |land| %>
+  <a href="/lands/<%= land.id %>">Land id: <%= land.id %> </a> <br>
+<% end %>

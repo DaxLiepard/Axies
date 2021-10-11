@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  health: 1
+  speed: 1
+  morale: 1
+  skill: 1
+
+two:
+  name: MyString
+  health: 1
+  speed: 1
+  morale: 1
+  skill: 1

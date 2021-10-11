@@ -1,0 +1,5 @@
+<h1> Wallets </h1>
+
+<% @wallets.each do |wallet| %>
+  <a href="/wallets/<%= wallet.id %>">Wallet id: <%= wallet.id %> </a> <br>
+<% end %>

@@ -1,0 +1,16 @@
+<%= form_with model: @card do |form| %>
+  <div>
+    <label for="">Attack</label>
+    <%= form.text_field :attack %>
+  </div>
+  <div>
+    <label for="">Defense</label>
+    <%= form.text_field :defense %>
+  </div>
+
+  <div>
+    <label>Axies</label>
+    <%= form.collection_select :axie_id, Axie.all, :id, :name ,prompt: true %>
+  </div>
+  <%= form.submit %>
+<% end %>

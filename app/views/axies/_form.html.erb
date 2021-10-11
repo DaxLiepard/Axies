@@ -1,0 +1,33 @@
+<%= form_with model: @axie do |form| %>
+  <div>
+    <label for="">Name</label>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <label for="">Health</label>
+    <%= form.text_field :health %>
+  </div>
+
+  <div>
+    <label for="">Speed</label>
+    <%= form.text_field :speed %>
+  </div>
+
+  <div>
+    <label for="">Morale</label>
+    <%= form.text_field :morale %>
+  </div>
+
+  <div>
+    <label for="">Skill</label>
+    <%= form.text_field :skill %>
+  </div>
+
+  <div>
+    <label>Wallet</label>
+    <%= form.collection_select :wallet_id, Wallet.all, :id, :ronin_address, prompt: true %>
+  </div>
+  <%= form.submit %>
+
+<% end %>
