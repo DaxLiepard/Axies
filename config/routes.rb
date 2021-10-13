@@ -10,5 +10,14 @@ Rails.application.routes.draw do
 
   resources :lands
 
+  namespace :api do
+    resources :axies #index, show, new, edit, create, update, destroy
+
+    resources :cards
+
+    resources :wallets
+
+    resources :lands
+  end
 end
 
